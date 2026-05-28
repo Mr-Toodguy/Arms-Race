@@ -189,7 +189,10 @@ h1 {
 }
 
 .info-card,
-.machine-card {
+.weapon-card,
+.machine-card,
+.tactics-card,
+.strategies-card {
   border: 1px solid var(--line);
   border-radius: 10px;
   background: var(--panel-alt);
@@ -201,23 +204,22 @@ h1 {
 }
 
 .info-card h4,
-.machine-body h4 {
+.weapon-body h4,
+.machine-body h4,
+.tactics-body h4,
+.strategies-body h4 {
   margin: 0 0 0.45rem;
   font-size: 1rem;
 }
 
 .info-card p,
-.machine-body p {
+.weapon-body p,
+.machine-body p,
+.tactics-body p,
+.strategies-body p {
   margin: 0;
   color: var(--muted);
   font: 0.95rem/1.55 Arial, sans-serif;
-}
-
-.weapon-card {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: var(--panel-alt);
-  overflow: hidden;
 }
 
 .weapon-image-placeholder {
@@ -239,10 +241,6 @@ h1 {
   letter-spacing: 0.08em;
 }
 
-.weapon-body {
-  padding: 0.9rem;
-}
-
 .placeholder {
   background: #eef3f6;
 }
@@ -262,7 +260,10 @@ h1 {
   background: #d9e1e6;
 }
 
-.machine-body {
+.weapon-body,
+.machine-body,
+.tactics-body,
+.strategies-body {
   padding: 0.85rem;
 }
 

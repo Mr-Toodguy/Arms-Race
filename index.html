@@ -6,7 +6,7 @@
   <title>Arms Race Documentation</title>
   <meta name="description" content="Rules & Information Reference Document for the Minecraft minigame Arms Race">
   <link rel="icon" type="image/png" href="images/ar_icon.png">
-  <link rel="stylesheet" href="styles.css?v=6">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <header id="site-header" class="site-header">
@@ -24,6 +24,8 @@
       <a href="#basic-rules">Gameplay Summary</a>
       <a href="#weapons">Weapons</a>
       <a href="#machines">Machines</a>
+      <a href="#tactics">Tactics</a>
+      <a href="#strategies">Strategies</a>
       <a href="#additional-rules">Additional Rules</a>
     </div>
   </nav>
@@ -288,6 +290,44 @@
       </div>
     </section>
 
+    <section id="tactics" class="section">
+      <h2>Tactics</h2>
+      <div class="weapon-grid">
+        <article class="tactics-card">
+          <!-- <img src="images/tactics/bridge_control.png" alt="Bridge Control"> -->
+          <div class="weapon-image-placeholder">No Image</div>
+          <div class="tactics-body">
+            <h4>Bridge Control</h4>
+            <p>Placeholder text for a short-term tactical approach focused on holding key lanes and forcing enemy movement.</p>
+          </div>
+        </article>
+        <article class="tactics-card">
+          <!-- <img src="images/tactics/base_defense.png" alt="Base Defense"> -->
+          <div class="weapon-image-placeholder">No Image</div>
+          <div class="tactics-body">
+            <h4>Base Defense</h4>
+            <p>Placeholder text for a tactic centered on defending beacons, responding to pushes, and limiting breaches.</p>
+          </div>
+        </article>
+        <article class="tactics-card">
+          <!-- <img src="images/tactics/air_support.png" alt="Air Support"> -->
+          <div class="weapon-image-placeholder">No Image</div>
+          <div class="tactics-body">
+            <h4>Air Support</h4>
+            <p>Placeholder text for coordinated aerial pressure, scouting, or quick reinforcement.</p>
+          </div>
+        </article>
+        <article class="tactics-card">
+          <!-- <img src="images/tactics/resource_pressure.png" alt="Resource Pressure"> -->
+          <div class="weapon-image-placeholder">No Image</div>
+          <div class="tactics-body">
+            <h4>Resource Pressure</h4>
+            <p>Placeholder text for tactics built around denying resources and slowing enemy production.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section id="additional-rules" class="section">
       <h2>Additional Rules</h2>
       <ul class="rule-list">
@@ -306,6 +346,7 @@
   </main>
   <script>
     (() => {
+      //Auto adjust scrolling offset for shortcuts based on toolbar height
       const toolbar = document.querySelector('.toolbar');
 
       function updateScrollPadding() {
