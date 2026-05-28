@@ -6,10 +6,10 @@
   <title>Arms Race Documentation</title>
   <meta name="description" content="Rules & Information Reference Document for the Minecraft minigame Arms Race">
   <link rel="icon" type="image/png" href="images/ar_icon.png">
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
-  <header class="site-header">
+  <header id="site-header" class="site-header">
     <div class="wrap">
       <!-- <p class="eyebrow">Arms Race Rules</p> -->
       <h1>Arms Race</h1>
@@ -19,7 +19,7 @@
 
   <nav class="toolbar" aria-label="Section navigation">
     <div class="wrap toolbar-inner">
-      <a href="#introduction">Introduction</a>
+      <a href="#site-header">Introduction</a>
       <a href="#maps">Maps</a>
       <a href="#basic-rules">Gameplay Summary</a>
       <a href="#weapons">Weapons</a>
@@ -307,24 +307,14 @@
   <script>
     (() => {
       const toolbar = document.querySelector('.toolbar');
-      const root = document.documentElement;
 
-      if (!toolbar || !root) {
-        return;
+      function updateScrollPadding() {
+        const height = toolbar.offsetHeight;
+        document.documentElement.style.setProperty('--toolbar-height', `${height}px`);
       }
 
-      const updateToolbarOffset = () => {
-        root.style.setProperty('--toolbar-offset', `${toolbar.offsetHeight}px`);
-      };
-
-      updateToolbarOffset();
-
-      window.addEventListener('resize', updateToolbarOffset);
-
-      if ('ResizeObserver' in window) {
-        const observer = new ResizeObserver(updateToolbarOffset);
-        observer.observe(toolbar);
-      }
+      window.addEventListener('DOMContentLoaded', updateScrollPadding);
+      window.addEventListener('resize', updateScrollPadding);
     })();
   </script>
 </body>
