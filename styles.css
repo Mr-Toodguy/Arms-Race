@@ -234,6 +234,20 @@ h1 {
   letter-spacing: 0.08em;
 }
 
+/* makes it one column when narrow */
+@media (max-width: 820px) {
+    .card-grid,
+    .weapon-grid,
+    .machine-grid,
+    .tactics-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .toolbar-inner {
+      gap: 0.4rem;
+    }
+  }
+
 .weapon-body,
 .machine-body,
 .tactics-body,
