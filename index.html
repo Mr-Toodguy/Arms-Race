@@ -6,7 +6,7 @@
   <title>Arms Race Documentation</title>
   <meta name="description" content="Rules & Information Reference Document for the Minecraft minigame Arms Race">
   <link rel="icon" type="image/png" href="images/ar_icon.png">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <header class="site-header">
@@ -304,5 +304,28 @@
       </ul>
     </section>
   </main>
+  <script>
+    (() => {
+      const toolbar = document.querySelector('.toolbar');
+      const root = document.documentElement;
+
+      if (!toolbar || !root) {
+        return;
+      }
+
+      const updateToolbarOffset = () => {
+        root.style.setProperty('--toolbar-offset', `${toolbar.offsetHeight}px`);
+      };
+
+      updateToolbarOffset();
+
+      window.addEventListener('resize', updateToolbarOffset);
+
+      if ('ResizeObserver' in window) {
+        const observer = new ResizeObserver(updateToolbarOffset);
+        observer.observe(toolbar);
+      }
+    })();
+  </script>
 </body>
 </html>
