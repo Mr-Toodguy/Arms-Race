@@ -28,9 +28,11 @@ html {
 
 body {
   margin: 0;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.45)),
-    linear-gradient(135deg, #dfe6db 0%, #ece7dd 100%);
+  background-color: #2f251f;
+  background-image: url('images/background/concrete.png');
+  background-repeat: repeat;
+  background-size: 64px 64px;
+  background-attachment: fixed;
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
