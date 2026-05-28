@@ -29,10 +29,12 @@ html {
 body {
   margin: 0;
   background-color: #2b3136;
-  background-image: url('images/background/concrete.png');
+  background-image: url('images/background/concrete256x.png');
   background-repeat: repeat;
-  background-size: 64px 64px;
+  background-size: 256px 256px;
   background-attachment: fixed;
+  image-rendering: pixelated;
+  filter: none;
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
