@@ -1,12 +1,12 @@
 :root {
-  --bg: #e7e1d8;
-  --panel: #f7f4ef;
-  --panel-alt: #f0ece4;
-  --line: #c9c1b3;
-  --text: #1d2327;
-  --muted: #5f6a73;
-  --accent: #3b6a4e;
-  --accent-2: #6a7b8a;
+  --bg: #d7dde3;
+  --panel: #f3f6f8;
+  --panel-alt: #e8edf1;
+  --line: #b8c2cb;
+  --text: #1c242b;
+  --muted: #5b6973;
+  --accent: #3f6578;
+  --accent-2: #6b8291;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --radius: 12px;
   --max: 980px;
@@ -28,7 +28,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #2f251f;
+  background-color: #2b3136;
   background-image: url('images/background/concrete.png');
   background-repeat: repeat;
   background-size: 64px 64px;
@@ -51,7 +51,7 @@ a {
 .site-header {
   padding: 2.25rem 0 1.25rem;
   border-bottom: 1px solid var(--line);
-  background: rgba(247, 244, 239, 0.72);
+  background: rgba(238, 242, 245, 0.72);
   backdrop-filter: blur(8px);
 }
 
@@ -81,7 +81,7 @@ h1 {
   top: 0;
   z-index: 10;
   border-bottom: 1px solid var(--line);
-  background: rgba(240, 236, 228, 0.95);
+  background: rgba(223, 229, 234, 0.95);
   backdrop-filter: blur(10px);
 }
 
@@ -226,10 +226,10 @@ h1 {
   background:
     repeating-linear-gradient(
       45deg,
-      #dad4c9,
-      #dad4c9 12px,
-      #e7e1d8 12px,
-      #e7e1d8 24px
+      #d8e0e6,
+      #d8e0e6 12px,
+      #e7edf2 12px,
+      #e7edf2 24px
     );
   border-bottom: 1px solid var(--line);
   color: var(--muted);
@@ -243,7 +243,7 @@ h1 {
 }
 
 .placeholder {
-  background: #f4efe6;
+  background: #eef3f6;
 }
 
 .machine-grid {
@@ -258,7 +258,7 @@ h1 {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-bottom: 1px solid var(--line);
-  background: #d8d8d8;
+  background: #d9e1e6;
 }
 
 .machine-body {
