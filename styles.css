@@ -176,13 +176,10 @@ h1 {
   margin-top: 0.45rem;
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
-}
-
-.weapon-grid {
+.card-grid,
+.weapon-grid,
+.machine-grid,
+.tactics-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
@@ -197,10 +194,6 @@ h1 {
   border-radius: 10px;
   background: var(--panel-alt);
   overflow: hidden;
-}
-
-.info-card {
-  padding: 0.9rem;
 }
 
 .info-card h4,
@@ -222,7 +215,7 @@ h1 {
   font: 0.95rem/1.55 Arial, sans-serif;
 }
 
-.weapon-image-placeholder {
+.card-image-placeholder {
   min-height: 120px;
   display: grid;
   place-items: center;
@@ -241,40 +234,9 @@ h1 {
   letter-spacing: 0.08em;
 }
 
-.placeholder {
-  background: #eef3f6;
-}
-
-.machine-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
-}
-
-.machine-card img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-bottom: 1px solid var(--line);
-  background: #d9e1e6;
-}
-
 .weapon-body,
 .machine-body,
 .tactics-body,
 .strategies-body {
   padding: 0.85rem;
-}
-
-@media (max-width: 820px) {
-  .card-grid,
-  .weapon-grid,
-  .machine-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .toolbar-inner {
-    gap: 0.4rem;
-  }
 }
